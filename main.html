@@ -1,65 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- add table here -->
-	
-		<table id="customers">
-		<tr>
-			<thead>
-			<th>NAME</th>
-			<th>KILLS</th>
-			<th>SAVED</th>
-			<th>DEATHS</th>
-			<th>REVIVES</th>
-			<th>WIN</th>
-		</tr>
-			</thead>
-	
-	<tbody>
-	
-	<tr>
-		<td>Hackermab</td>
-		<td>10</td>
-		<td>0</td>
-		<td>1</td>
-		<td>0</td>
-		<td>0</td>
-	</tr>
-		
-		<tr>
-		<td>Cool Doggo</td>
-		<td>13</td>
-		<td>4</td>
-		<td>8</td>
-		<td>7</td>
-		<td>1</td>
-	</tr>
-		<tr>
-		<td>Andrews</td>
-		<td>19</td>
-		<td>2</td>
-		<td>10</td>
-		<td>11</td>
-		<td>0</td>
-	</tr>
-		<tr>
-		<td>Cool Doggo</td>
-		<td>2</td>
-		<td>9</td>
-		<td>3</td>
-		<td>5</td>
-		<td>1</td>
-	</tr>
-	
-		</tbody>
-</table>
-        
+	<!-- the entire body must be written by student -->
+	<form method="post"
+		target="_blank">
+		<div>
+		<label for="name">Name*</label>
+		<input type="text"  required id="name">
+			</div>
+		<div>
+		<label for="email">Email*</label>
+		<input type="email"  required id="email">
+		</div>
+		<div>
+			<lable for="gender">Gender*</lable>
+			<input type="radio" id="gender" name="gender" required>Male
+			<input type="radio" id="gender" name="gender" required>Female
+		</div>
+		<div>
+			<label for="cars">Car Brands</label>
+			<select id="cars">
+				<option value="BMW">BMW</option>
+				<option value="Audi">Audi</option>
+				<option value="Mercedez">Mercedez</option>
+			</select>
+		</div>
+		<div>
+			<label for="age">Age*</label>
+			<input type="number"  min="1" required id="age">
+		</div>
+		<div>
+			<label for="dob">DOB*</label>
+			<input type="date" required id="dob" >
+		</div>
+		<div>
+			<label for="password">Password*</label>
+			<input type="password"  required id="password">
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+    <script type="text/javascript" src="./script.js">
+</script>
+
 </body>
+
 </html>
